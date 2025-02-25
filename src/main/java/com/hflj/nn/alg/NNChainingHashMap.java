@@ -69,6 +69,9 @@ public class NNChainingHashMap<K, V> {
             table[i] = new LinkedList<>();
         }
     }
+    public boolean contain(K key) {
+        return get(key) != null;
+    }
 
     public int getSize() {
         return size;
